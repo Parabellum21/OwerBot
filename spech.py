@@ -6,9 +6,9 @@ import time
 #mixer.init()
 
 
-def get_spech(msg):
+def get_spech(msg, mova):
     print(msg)
-    tts=gTTS(text=msg, lang='sk')
+    tts=gTTS(text=msg, lang=mova)
     tts.save('hello.mp3')
     return 'hello.mp3'
 
